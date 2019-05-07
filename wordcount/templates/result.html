@@ -3,7 +3,7 @@
 <a href = "{% url 'home' %}">다시 하기</a>
 <br>
 <h2>입력한 텍스트: </h2>
-{{full}}
+{{full}} 
 
 <h2>단어 카운트: </h2>
 {%for word, howmany in dictionary%}
@@ -11,3 +11,7 @@
 {{word}} : {{howmany}}
 <br>
 {%endfor%}
+
+<h2>윤진: </h2>
+
+윤진: {{find_YJ}}
